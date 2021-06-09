@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head lang="pl">
+    <meta charset="utf-8"/>
+    <title></title>
+    <meta name="description" content=" "/>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sigmar+One&family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&family=Sigmar+One&family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><font color="darkred"> Polskie</font><font color="whitesmoke"> Owoce</font></a>
+        </div>
+        <nav>
+            <ol>
+                <li><a href=index.html>Home</a></li>
+                <li><a href=strona2.html>Kontakt</a></li>
+                <li><a href=strona3.html>Uprawa</a></li>
+                <li><a href=strona4.html>Przepisy</a></li>
+                <li><a href=strona5.html>Zaloguj</a></li>
+                <li><a href=strona6.html>Zarejestruj</a></li>
+                <button class="btn"></button>
+            </ol>
+        </nav>
+    </header>
+    <main>
+        <section>
+			<!-- miejsce dla capka -->
+            <div class="nav-left" onclick="changeLeft()">
+                <i class="fas fa-chevron-left"></i>
+              </div>
+            <img class="slider" src="slider img/truskawki.jpg" alt="">
+            <div class="nav-right" onclick="changeRight()">
+                <i class="fas fa-chevron-right"></i>
+              </div>
+
+            <h1 class="slider-h1">Pierwszy tekst</h1>
+            <div class="dots">
+              <span id="one" class="active"></span>
+              <span id="two"></span>
+              <span id="three"></span>
+              <span id="four"></span>
+            </div>
+
+        </section> 
+    </main>
+    <footer>
+        <div id="footer">
+           <p>
+                Działanie sfinansowane ze środków Funduszu Promocji Owoców i Warzyw
+           </p>
+           
+            <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
