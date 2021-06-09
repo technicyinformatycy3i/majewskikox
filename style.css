@@ -1,0 +1,366 @@
+/* #############
+Część wspólna
+############# */
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: #202020;
+    display: flex;
+    flex-direction: column;
+    height: 110vh;
+    align-items: center;
+}
+
+header{
+    width: 100%;
+    height: 19vh;
+    margin-top: auto;
+    
+}
+#logo{
+    display: block;
+    background-color: #202020;
+    text-align: center;
+    font-weight: 600;
+    color: white;
+    text-shadow: 5px 5px black;
+    width: auto;
+    padding: 30px 0;
+    font-size: 54px;
+    margin: 0 auto;
+    background-image: url(img/background.png);
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'ZCOOL KuaiLe', cursive;
+}
+a:link{
+    color: #fff;
+    text-decoration: none;
+}
+a:hover{
+    color: #fff;
+    text-decoration: none;
+}
+a:visited{
+    color: #fff;
+    text-decoration: none;
+}
+nav{
+    width: 100%;
+    padding: 10px 0;
+    background-color: #EA324D;
+    text-align: center;
+    font-family: 'Odibee Sans', cursive;     
+}
+ol{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+    font-size: 28px;
+    height: 35px;
+    line-height: 150%;
+    font-weight: 550;
+}
+ol a{
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 0px;
+    margin: 0px;
+    
+}
+ol>li{
+    width: 200px;
+    text-transform: uppercase;
+    transition-property: background;
+    transition-duration: 0.5s;
+    border-radius: 25px;
+}
+ol>li:hover{
+    background-color: #3e3030;
+    border-radius: 25px;
+}
+
+footer{
+    width: 79vw;
+    background-color: #EA324D;
+    height: 15vh;
+    display: block;    
+}
+#footer{
+    width: 79vw;
+    background-color: #EA324D;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+    
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+    border-radius: 12.5px;
+    height: 55px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+    border-radius: 12.5px;
+}
+
+.fa-facebook {
+  background: #2D4A85;
+  color: white;
+}
+
+
+footer p{
+    font-size: 20px;
+    color: white;
+}
+
+/* #############
+Main strona główna
+############# */
+
+main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+}
+section{
+    width: 79vw;
+    background-color: #303030;
+    height: 100%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+}
+
+/* #############
+    slider
+############# */
+
+.slider
+{
+    width: 100%;
+    
+}
+
+.slider-h1
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5rem;
+}
+
+.dots {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%)
+  }
+
+  .dots span {
+    display: inline-block;
+    background-color: #000;
+    margin: 0 20px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 5px white;
+  }
+
+  .dots span.active {
+    box-shadow: 0 0 0 5px white, 0 0 3px 10px red;
+  }
+
+  .nav-left,
+.nav-right {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: 0.2s;
+}
+
+.nav-left:hover,
+.nav-right:hover {
+  opacity: 1;
+}
+
+.nav-left {
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.nav-right {
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.unactive {
+  display: none;
+}
+
+/* #############
+    main kontakt
+############# */
+
+.kontakt{
+    padding: 30px;
+    flex-direction: column;
+    align-items: center;
+}
+
+#bcg1{
+    background-image: url(truskawa.png);
+    height: 300px;
+    width: 400px;
+    display: flex;
+    font-family: 'Roboto Condensed', sans-serif;
+    align-items: flex-end;
+    justify-content: center;
+    font-size: 36px;
+    color: azure;
+    margin-right: 700px;
+    
+}
+
+#bcg2{
+    background-image: url(borowka.png);
+    height: 300px;
+    width: 400px;
+    display: flex;
+    font-family: 'Roboto Condensed', sans-serif;
+    align-items: flex-end;
+    justify-content: center;
+    font-size: 36px;
+    color: azure;
+    margin-left: 700px;
+}
+
+
+                /* #############
+                    main uprawa
+                ############# */
+.uprawa{
+    display: flex;
+    flex-direction: column;
+    height: 200vh;
+}
+
+.uprawa p{
+    font-size: 20px;
+    color: #E4E4E4;
+    margin: 0px 3vw;
+    margin-bottom: 5px;
+    
+}
+
+
+.naglowek1{
+    color: #BAD3F0;
+    width: 70%;
+    text-align: center;
+    margin: 2vh auto;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.img3{
+    width: 700px;
+    margin: 2vh auto;
+}
+
+.vh{
+    height: 200vh;
+}
+
+
+/* #############
+RESPONSYWNOŚĆ
+############# */
+@media all and (min-width:600px) and (max-width:1199px){
+    nav{
+        height: 90px;
+    }
+    header{
+    height: 300px;
+    }
+    section{
+        width:  600px;
+    }
+    #footer{
+        width:  600px;
+    }
+ 
+    p{
+        font-size: 16px;
+    }
+}
+
+@media all and (min-width:400px) and (max-width:599px){
+    nav{
+        height: 130px;
+    }
+    #logo{
+        font-size: 48px;
+    }
+    header{
+    height: 300px;
+    }
+    .ad{
+    }
+    section{
+        width:  400px;
+    }
+    #footer{
+        width:  400px;
+    }
+    p{
+        font-size: 14px;
+    }
+}
+
+@media all and (min-width:0px) and (max-width:399px){
+    nav{
+        height: 240px;
+    }
+    #logo{
+        font-size: 36px;
+        text-align: center;
+    }
+    header{
+    height: 400px;
+    }
+    section{
+        width:  300px;
+    }
+    #footer{
+        width:  300px;
+    }
+    
