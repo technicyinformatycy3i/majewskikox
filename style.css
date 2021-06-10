@@ -300,6 +300,57 @@ section{
     height: 200vh;
 }
 
+                /* #############
+                    main logowanie
+                ############# */
+.login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#panel {
+width: 400px; 
+margin: 0 auto; 
+padding: 15px 0 0;
+background: #202020;
+border: 1px solid silver;
+font: 18px ;
+-webkit-box-shadow: 0 0 2px silver; 
+-moz-box-shadow: 0 0 2px silver; 
+box-shadow: 0 0 2px silver;
+}
+label {
+display: block;
+width: 260px;
+padding: 10px 20px;
+color: #ffff;
+font-size: 16px;
+}
+
+form {
+margin: 0;
+}
+
+#lower {
+background: #252525;
+width: 100%;
+padding: 5px 20px;
+margin-top: 20px;
+}
+
+
+input[type="submit"] {
+width: 70px;
+padding: 5px 13px;
+border: 1px solid #005f85;
+color: white;
+text-shadow: 0 0 1px black;
+background: #98c9dc;
+
+
+}
+
+
 
 /* #############
 RESPONSYWNOŚĆ
