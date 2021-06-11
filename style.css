@@ -54,7 +54,8 @@ nav{
     padding: 10px 0;
     background-color: #EA324D;
     text-align: center;
-    font-family: 'Odibee Sans', cursive;     
+    font-family: 'Odibee Sans', cursive;
+    z-index: 2;
 }
 ol{
     display: flex;
@@ -67,6 +68,7 @@ ol{
     height: 35px;
     line-height: 150%;
     font-weight: 550;
+    z-index: 2;
 }
 ol a{
     color: #fff;
@@ -74,6 +76,7 @@ ol a{
     display: block;
     padding: 0px;
     margin: 0px;
+    z-index: 2;
     
 }
 ol>li{
@@ -82,6 +85,7 @@ ol>li{
     transition-property: background;
     transition-duration: 0.5s;
     border-radius: 25px;
+    z-index: 2;
 }
 ol>li:hover{
     background-color: #3e3030;
@@ -355,63 +359,151 @@ background: #98c9dc;
 /* #############
 RESPONSYWNOŚĆ
 ############# */
-@media all and (min-width:600px) and (max-width:1199px){
-    nav{
-        height: 90px;
-    }
-    header{
-    height: 300px;
-    }
-    section{
-        width:  600px;
-    }
-    #footer{
-        width:  600px;
-    }
- 
-    p{
-        font-size: 16px;
-    }
-}
 
-@media all and (min-width:400px) and (max-width:599px){
-    nav{
-        height: 130px;
-    }
-    #logo{
-        font-size: 48px;
-    }
-    header{
-    height: 300px;
-    }
-    .ad{
-    }
-    section{
-        width:  400px;
-    }
-    #footer{
-        width:  400px;
-    }
-    p{
-        font-size: 14px;
-    }
-}
-
-@media all and (min-width:0px) and (max-width:399px){
-    nav{
-        height: 240px;
-    }
-    #logo{
-        font-size: 36px;
-        text-align: center;
-    }
-    header{
-    height: 400px;
-    }
-    section{
-        width:  300px;
-    }
-    #footer{
-        width:  300px;
-    }
     
+    @media (max-width: 1355px)
+{
+        #bcg1{
+        height: 150px;
+        width: 200px;
+        margin-right: 50px;
+        background-image: url(truskawka%201.png);
+        font-size: 20px;
+        }
+        
+       #bcg2{
+        height: 150px;
+        width: 200px;
+        margin-right: 750px;
+        background-image: url(borowka%201.png);
+        font-size: 20px;
+        margin-top: 200px;
+    }
+        .login{
+            height: 100%;
+        }
+}
+
+@media (max-width: 1245px){
+    
+    nav{
+        height: 150px;
+    }
+    .kontakt{
+        margin-top: 110px;
+    }
+    .uprawa{
+        margin-top: 110px;
+    }
+    .main{
+        margin-top: 110px;
+    }
+    .login{
+        margin-top: 110px;
+    }
+}
+        
+        @media (max-width: 1250px){
+            .img3{
+              width: 75%;  
+            }
+        }
+        
+        @media (max-width: 564px){
+            .uprawa p{
+        font-size: 15px;
+        }
+            footer p{
+                font-size: 15px;
+            }
+        }
+      @media (max-width: 420px){
+    
+            nav{
+            height: 250px;
+    }
+            .kontakt{
+        margin-top: 180px;
+    }
+            .uprawa{
+        margin-top: 180px;
+    }
+}
+
+    @media (max-width: 390px){
+    
+        nav{
+        height: 250px;
+    }
+        .kontakt{
+        margin-top: 235px;
+    }
+        .uprawa{
+        margin-top: 235px;
+    }
+        .main{
+          margin-top: 235px;  
+        }
+        .login{
+           margin-top: 235px; 
+        }
+}
+        
+/*
+        @media (max-height: 940px) {
+         .uprawa{
+                height: 300vh;
+            }
+        
+            .kontakt{
+              height: 300vh;  
+            }
+            
+            .main{
+                height: 300vh;
+            }
+            
+        } footer{
+            margin-top: 860px;
+            
+        }
+        
+        @media (max-height: 860px){
+         .uprawa{
+                height: 310vh;
+            }
+        } 
+            
+         @media (max-height: 780px){
+         .uprawa{
+                height: 320vh;
+            }
+        }
+        @media (max-height: 720px){
+         .uprawa{
+                height: 330vh;
+            }
+        }
+        
+        @media (max-height: 660px){
+         .uprawa{
+                height: 341vh;
+            }
+        }
+        @media (max-height: 610px){
+         .uprawa{
+                height: 351vh;
+            }
+        }
+        @media (max-height: 570px){
+         .uprawa{
+                height: 361vh;
+            }
+        }
+        @media (max-height: 535px){
+         .uprawa{
+                height: 371vh;
+            }
+        }
+*/
+        
